@@ -74,7 +74,7 @@ A tarefa é de **classificação**: a partir de 11 variáveis registradas na bas
 
 ### Como o experimento foi realizado
 
-O notebook, inspirado nos materiais da disciplina, documenta cada etapa:
+O notebook, inspirado nos materiais da disciplina _(Implementação de Modelos de Machine Learning - Professora Tatiana Escovedo)_, documenta cada etapa:
 
 1. **Carga e análise dos dados:** lê [heart.csv](heart.csv) por uma URL pública e examina suas colunas, estatísticas e distribuição das classes. A cópia possui 918 registros e 12 colunas: 11 atributos e uma classe alvo.
 2. **Preparação:** converte categorias textuais para números e separa os dados em 80% para treino e 20% para teste, preservando aproximadamente a proporção das classes (*holdout* estratificado).
@@ -187,4 +187,4 @@ A aplicação não grava as entradas. Isso não garante conformidade com a LGPD:
 
 Os testes de desempenho usam a partição de teste salva no projeto; os limiares de 0,80 são verificações técnicas iniciais, não critérios de validade clínica. O pickle deve ser carregado apenas de fonte confiável: arquivos pickle podem executar código ao serem abertos.
 
-Fonte do conjunto de dados: [Heart Failure Prediction Dataset, fedesoriano (Kaggle)](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction). [heart.csv](heart.csv) é a cópia utilizada pelo projeto. A interface é uma primeira implementação inspirada no mockup; a imagem de fundo foi gerada por IA.
+Fonte do conjunto de dados: [Heart Failure Prediction Dataset, fedesoriano (Kaggle)](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction). [heart.csv](heart.csv) é a cópia utilizada pelo projeto. A interface é uma primeira implementação inspirada no meu mockup; a imagem de fundo foi gerada por IA.
