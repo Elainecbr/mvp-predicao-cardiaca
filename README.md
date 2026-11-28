@@ -138,7 +138,33 @@ flowchart TD
 
 A rota e a configuração Flask ficam em [api/app.py](api/app.py); a validação e os mapeamentos em [api/validacao.py](api/validacao.py); e a carga e execução do modelo em [api/predicao.py](api/predicao.py). Os testes e seus resultados estão explicados em [docs/resultados-testes.md](docs/resultados-testes.md).
 
+```mermaid
+flowchart LR
+    subgraph Client ["🖥️ Front-end (Porta 8080)"]
+        A["Formulário Web<br/>(HTML / CSS / JS Vanilla)"]
+    end
+
+    subgraph Server ["⚙️ Back-end API (Flask - Porta 5000)"]
+        B["Rota POST /predict<br/>(Validação Schema)"]
+        C["Pré-processamento<br/>& Pipeline (.pkl)"]
+        D["Modelo Treinado<br/>(Scikit-Learn)"]
+    end
+
+    subgraph QA ["🛡️ Qualidade (CI/CD)"]
+        E["Testes Automatizados<br/>(Pytest + Assert Acurácia)"]
+    end
+
+    A -- "1. Envia dados (JSON)" --> B
+    B -- "2. Encaminha dados validados" --> C
+    C -- "3. Aplica escala e prediz" --> D
+    D -- "4. Retorna Classe (0 ou 1)" --> B
+    B -- "5. Exibe resultado na tela" --> A
+    E -. "Valida API e Modelo" .-> Server
+```
 A opção **Preencher exemplo fictício** preenche os 11 campos para demonstrar a aplicação sem usar dados pessoais; ela não modifica o dataset nem treina o modelo. Os limites exibidos junto aos campos são validações técnicas do protótipo, não valores clínicos de referência.
+
+Front-End
+<img width="518" height="806" alt="grafik" src="https://github.com/user-attachments/assets/cd78c40e-99d9-4265-8343-b7e008476345" />
 
 A aplicação não grava as entradas. Isso não garante conformidade com a LGPD: dados clínicos são sensíveis e seu tratamento real exige avaliação adequada de segurança, privacidade e base legal. Não utilize dados reais neste protótipo.
 
