@@ -20,7 +20,7 @@ As células de texto apresentam o problema, o conjunto de dados e a metodologia.
 
 O CSV é lido por uma URL pública do GitHub. As células `info`, `describe` e o gráfico da classe alvo ajudam a conhecer os tipos das colunas, estatísticas e proporção das classes.
 
-**Atenção:** existem 172 valores zero em `Cholesterol` e um em `RestingBP`. Esses valores merecem investigação, mas não devemos afirmar sua origem sem confirmação na documentação da fonte. Em uma evolução, pode-se comparar uma estratégia de tratamento de valores ausentes dentro do pipeline, mantendo o CSV original.
+**Atenção:** existem 172 valores zero em `Cholesterol` e um em `RestingBP`,campos não preenchidos. Esses valores merecem investigação, mas não devemos afirmar sua origem sem confirmação na documentação da fonte. Em uma evolução, pode-se comparar uma estratégia de tratamento de valores ausentes dentro do pipeline, mantendo o CSV original.
 
 ### Codificação das categorias
 
