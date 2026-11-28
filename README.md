@@ -4,7 +4,7 @@
 
 Protótipo acadêmico para estudo, testes e experimentação com notebook de machine learning, API Flask e interface HTML/CSS/JavaScript separada. **Não é validado clinicamente e não deve ser usado para diagnóstico, decisões de saúde ou triagem real.** A classe predita não é uma estimativa de risco futuro.
 
-O conjunto de dados utilizado é limitado e não permite assegurar que os resultados se apliquem a outras populações ou regiões. Investigar diferenças demográficas e geográficas exigiria dados adequados e avaliações adicionais; essas características não devem ser presumidas ou inventadas.
+O conjunto de dados utilizado é limitado e não permite assegurar que os resultados se apliquem a outras populações ou regiões. Investigar diferenças demográficas e geográficas exigiria dados adequados e avaliações adicionais fora do escopo do MVP. Essas características não devem ser presumidas ou inventadas.
 
 <img width="546" height="565" alt="grafik" src="https://github.com/user-attachments/assets/69756814-38fc-4eca-9fe5-bdd2702a6ffb" />
 
@@ -63,6 +63,8 @@ Essa árvore descreve os arquivos presentes na cópia local. Os ambientes virtua
 ## O que é aprendizado de máquina?
 
 **Aprendizado de máquina** (*machine learning*, ou ML) é uma área da computação em que algoritmos aprendem padrões a partir de dados, em vez de depender apenas de regras escritas manualmente. Neste projeto usamos **aprendizado supervisionado**: durante o treinamento, o algoritmo recebe exemplos com atributos de entrada (`X`) e uma classe conhecida (`y`).
+
+***"O ML é um subconjunto da ciência da computação, ciência de dados e inteligência artificial (IA) que permite que os sistemas aprendam e melhorem com os dados sem intervenções adicionais de programação."***
 
 A tarefa é de **classificação**: a partir de 11 variáveis registradas na base, o modelo retorna uma das classes da coluna `HeartDisease`: `0` ou `1`. A classe é uma saída do experimento, não um diagnóstico médico nem uma previsão comprovada de risco futuro.
 
