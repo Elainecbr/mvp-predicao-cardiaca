@@ -1,6 +1,6 @@
 # MVP acadêmico: classificação de doença cardíaca com Machine Learning - ML
 ## Pós-Graduação em Engenharia de Software — PUC-Rio Disciplina: Engenharia de Sistemas de Software Inteligentes
-### Aluna: Elaine Cristina Bundscherer
+### Aluna: Elaine das Chagas Bundscherer
 
 Protótipo acadêmico para estudo, testes e experimentação com notebook de machine learning, API Flask e interface HTML/CSS/JavaScript separada. **Não é validado clinicamente e não deve ser usado para diagnóstico, decisões de saúde ou triagem real.** A classe predita não é uma estimativa de risco futuro.
 
