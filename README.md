@@ -163,7 +163,8 @@ flowchart LR
 ```
 A opção **Preencher exemplo fictício** preenche os 11 campos para demonstrar a aplicação sem usar dados pessoais; ela não modifica o dataset nem treina o modelo. Os limites exibidos junto aos campos são validações técnicas do protótipo, não valores clínicos de referência.
 
-Front-End
+# Front-End
+
 <img width="518" height="806" alt="grafik" src="https://github.com/user-attachments/assets/cd78c40e-99d9-4265-8343-b7e008476345" />
 
 A aplicação não grava as entradas. Isso não garante conformidade com a LGPD: dados clínicos são sensíveis e seu tratamento real exige avaliação adequada de segurança, privacidade e base legal. Não utilize dados reais neste protótipo.
