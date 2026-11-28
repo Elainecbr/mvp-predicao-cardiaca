@@ -6,6 +6,9 @@ Protótipo acadêmico para estudo, testes e experimentação com notebook de mac
 
 O conjunto de dados utilizado é limitado e não permite assegurar que os resultados se apliquem a outras populações ou regiões. Investigar diferenças demográficas e geográficas exigiria dados adequados e avaliações adicionais fora do escopo do MVP. Essas características não devem ser presumidas ou inventadas.
 
+"_O ML é um subconjunto da ciência da computação, ciência de dados e inteligência artificial (IA) que permite que os sistemas aprendam e melhorem com os dados sem intervenções adicionais de programação_." (https://www.ibm.com/br-pt/think/topics/machine-learning-types#1694164798)
+
+
 <img width="546" height="565" alt="grafik" src="https://github.com/user-attachments/assets/69756814-38fc-4eca-9fe5-bdd2702a6ffb" />
 
 
