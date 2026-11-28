@@ -14,7 +14,7 @@ O conjunto utilizado é o [Heart Failure Prediction Dataset](https://www.kaggle.
 
 As células de texto apresentam o problema, o conjunto de dados e a metodologia. Em seguida, as bibliotecas são importadas: `pandas` para dados, `matplotlib` para gráficos, Scikit-Learn para modelos e métricas, e `pickle` para exportar o modelo.
 
-**Como explicar:** “O notebook é também o relatório do experimento: ele mostra não só o código, mas a justificativa de cada etapa.”
+**Relatório e documentação:** “O notebook é também o relatório do experimento: ele mostra não só o código, mas a justificativa de cada etapa.”
 
 ### Carga e análise exploratória
 
