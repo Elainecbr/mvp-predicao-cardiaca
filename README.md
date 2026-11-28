@@ -8,6 +8,11 @@ O conjunto de dados utilizado é limitado e não permite assegurar que os result
 
 O notebook atualizado está em [api/MachineLearning/notebooks/Predicao_Doenca_Cardiaca_A.ipynb](api/MachineLearning/notebooks/Predicao_Doenca_Cardiaca_A.ipynb). O modelo foi serializado com scikit-learn 1.6.1; outras versões não são garantidamente compatíveis.
 
+<img width="1010" height="454" alt="grafik" src="https://github.com/user-attachments/assets/2099b8c1-2206-4e8e-bd15-072e06aa70ec" />
+
+
+
+
 ## Estrutura do projeto
 
 O front-end e a API estão em diretórios separados. Os arquivos de treinamento e teste ficam dentro da API, mas o treinamento é realizado no notebook, independentemente da aplicação.
