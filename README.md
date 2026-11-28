@@ -6,6 +6,9 @@ Protótipo acadêmico para estudo, testes e experimentação com notebook de mac
 
 O conjunto de dados utilizado é limitado e não permite assegurar que os resultados se apliquem a outras populações ou regiões. Investigar diferenças demográficas e geográficas exigiria dados adequados e avaliações adicionais; essas características não devem ser presumidas ou inventadas.
 
+<img width="546" height="565" alt="grafik" src="https://github.com/user-attachments/assets/69756814-38fc-4eca-9fe5-bdd2702a6ffb" />
+
+
 O notebook atualizado está em [api/MachineLearning/notebooks/Predicao_Doenca_Cardiaca_A.ipynb](api/MachineLearning/notebooks/Predicao_Doenca_Cardiaca_A.ipynb). O modelo foi serializado com scikit-learn 1.6.1; outras versões não são garantidamente compatíveis.
 
 <img width="1010" height="454" alt="grafik" src="https://github.com/user-attachments/assets/2099b8c1-2206-4e8e-bd15-072e06aa70ec" />
