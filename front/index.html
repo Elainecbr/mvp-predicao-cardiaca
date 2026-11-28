@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coração Saudável | MVP acadêmico</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="scripts.js?v=2" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">MVP acadêmico · PUC-Rio</p>
+        <h1>Protótipo Acadêmico de<br>Classificação Cardiovascular</h1>
+        <p class="subtitle">Experimento de aprendizado de máquina</p>
+      </div>
+      <div class="brand"><span aria-hidden="true">♥</span><strong>Coração<br>Saudável</strong></div>
+    </header>
+
+    <form id="formulario">
+      <section class="basic" aria-labelledby="perfil-title">
+        <p class="notice"><strong>⚠ Importante:</strong> Este é um protótipo acadêmico, não validado clinicamente. Não use o resultado para diagnóstico, decisões de saúde ou triagem real. Consulte um profissional de saúde.</p>
+        <h2 id="perfil-title"><span aria-hidden="true">▣</span> Perfil básico</h2>
+        <p class="hint">Informe somente as variáveis utilizadas pelo modelo. Não solicitamos nome, telefone ou data de nascimento.</p>
+        <div class="example">
+          <strong>Quer experimentar sem dados pessoais?</strong>
+          <p>Preencha o formulário com valores fictícios, criados apenas para testar a interface. Eles não representam um paciente ou exame real e não alteram o dataset.</p>
+          <button type="button" id="preencher-exemplo">Preencher exemplo fictício</button>
+        </div>
+        <p class="hint"><strong>Como preencher:</strong> os limites mostrados abaixo são regras técnicas deste protótipo, não faixas clínicas de normalidade nem garantia de que o modelo seja confiável para todos esses valores.</p>
+        <div class="grid">
+          <label>Idade <span class="unit">(anos)</span><input name="Age" type="number" min="1" max="120" step="1" placeholder="Ex.: 54" aria-describedby="age-help" required><small id="age-help">Número inteiro de 1 a 120.</small></label>
+          <label>Sexo <span class="unit">(categorias da base)</span><select name="Sex" required><option value="">Selecione</option><option value="M">Masculino (M)</option><option value="F">Feminino (F)</option></select></label>
+        </div>
+      </section>
+      <section class="clinical" aria-labelledby="clinical-title">
+        <h2 id="clinical-title"><span aria-hidden="true">♥</span> Indicadores clínicos</h2>
+        <p class="clinical-hint">Dados necessários para o experimento de classificação.</p>
+        <div class="grid">
+          <label>Tipo de dor no peito<select name="ChestPainType" required><option value="">Selecione</option><option value="TA">Angina típica (TA)</option><option value="ATA">Angina atípica (ATA)</option><option value="NAP">Dor não anginosa (NAP)</option><option value="ASY">Assintomático (ASY)</option></select></label>
+          <label>Pressão arterial em repouso <span class="unit">(mmHg)</span><input name="RestingBP" type="number" min="1" max="300" step="1" placeholder="Ex.: 130" aria-describedby="bp-help" required><small id="bp-help">Um número inteiro de 1 a 300; não use formato 120/80.</small></label>
+          <label>Colesterol sérico <span class="unit">(mg/dL)</span><input name="Cholesterol" type="number" min="1" max="1000" step="1" placeholder="Ex.: 240" aria-describedby="cholesterol-help" required><small id="cholesterol-help">Número inteiro de 1 a 1000.</small></label>
+          <fieldset><legend>Glicemia em jejum &gt; 120 mg/dL?</legend><div class="radios"><label><input type="radio" name="FastingBS" value="1" required> Sim</label><label><input type="radio" name="FastingBS" value="0"> Não</label></div></fieldset>
+          <label>Eletrocardiograma em repouso<select name="RestingECG" required><option value="">Selecione</option><option value="Normal">Normal</option><option value="ST">Alteração ST-T (ST)</option><option value="LVH">Hipertrofia ventricular esquerda (LVH)</option></select></label>
+          <label>Frequência cardíaca máxima <span class="unit">(bpm)</span><input name="MaxHR" type="number" min="1" max="300" step="1" placeholder="Ex.: 150" aria-describedby="hr-help" required><small id="hr-help">Número inteiro de 1 a 300.</small></label>
+          <fieldset><legend>Angina induzida por exercício?</legend><div class="radios"><label><input type="radio" name="ExerciseAngina" value="Y" required> Sim</label><label><input type="radio" name="ExerciseAngina" value="N"> Não</label></div></fieldset>
+          <label>Depressão do segmento ST <span class="unit">(Oldpeak)</span><input name="Oldpeak" type="number" min="-10" max="10" step="0.1" placeholder="Ex.: 1,5" aria-describedby="oldpeak-help" required><small id="oldpeak-help">De -10 a 10, em passos de 0,1. Ex.: 1,5.</small></label>
+          <label>Inclinação do segmento ST<select name="ST_Slope" required><option value="">Selecione</option><option value="Up">Ascendente (Up)</option><option value="Flat">Plana (Flat)</option><option value="Down">Descendente (Down)</option></select></label>
+        </div>
+        <div class="actions"><button type="submit">Avaliar com o modelo <span aria-hidden="true">♥</span></button></div>
+        <div id="resultado" class="result" role="status" aria-live="polite" hidden></div>
+      </section>
+    </form>
+    <footer>Projeto educacional · Não substitui avaliação profissional.</footer>
+  </main>
+</body>
+</html>

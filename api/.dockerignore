@@ -1,0 +1,8 @@
+**
+!requirements.txt
+!app.py
+!validacao.py
+!predicao.py
+!MachineLearning/
+!MachineLearning/pipelines/
+!MachineLearning/pipelines/modelo_cardiaco_pipeline.pkl
