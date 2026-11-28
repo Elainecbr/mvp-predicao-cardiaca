@@ -18,7 +18,6 @@ O notebook atualizado está em [api/MachineLearning/notebooks/Predicao_Doenca_Ca
 
 
 
-
 ## Estrutura do projeto
 
 O front-end e a API estão em diretórios separados. Os arquivos de treinamento e teste ficam dentro da API, mas o treinamento é realizado no notebook, independentemente da aplicação.
@@ -65,9 +64,11 @@ Essa árvore descreve os arquivos presentes na cópia local. Os ambientes virtua
 
 ## O que é aprendizado de máquina?
 
-**Aprendizado de máquina** (*machine learning*, ou ML) é uma área da computação em que algoritmos aprendem padrões a partir de dados, em vez de depender apenas de regras escritas manualmente. Neste projeto usamos **aprendizado supervisionado**: durante o treinamento, o algoritmo recebe exemplos com atributos de entrada (`X`) e uma classe conhecida (`y`).
+Em vez de seguir regras programadas para cada situação, o aprendizado de máquina (ML) usa algoritmos para identificar padrões em dados e, com base neles, fazer previsões ou recomendações. À medida que recebe novos dados, o modelo pode ser atualizado ou treinado novamente para melhorar suas estimativas — embora isso não aconteça automaticamente em todos os sistemas.
 
-***"O ML é um subconjunto da ciência da computação, ciência de dados e inteligência artificial (IA) que permite que os sistemas aprendam e melhorem com os dados sem intervenções adicionais de programação."***
+Por exemplo, lojas virtuais podem analisar compras anteriores e outros sinais de interesse para recomendar produtos. Essas recomendações ajudam a personalizar a experiência, mas também podem influenciar o que o consumidor escolhe comprar. A qualidade das previsões depende dos dados e do modelo; dados incompletos ou enviesados podem levar a resultados inadequados.
+
+**Aprendizado de máquina** (*machine learning*, ou ML) é  também uma área da computação em que algoritmos aprendem padrões a partir de dados, em vez de depender apenas de regras escritas manualmente. Neste projeto usamos **aprendizado supervisionado**: durante o treinamento, o algoritmo recebe exemplos com atributos de entrada (`X`) e uma classe conhecida (`y`).
 
 A tarefa é de **classificação**: a partir de 11 variáveis registradas na base, o modelo retorna uma das classes da coluna `HeartDisease`: `0` ou `1`. A classe é uma saída do experimento, não um diagnóstico médico nem uma previsão comprovada de risco futuro.
 
